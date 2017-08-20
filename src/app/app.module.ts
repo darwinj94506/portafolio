@@ -8,6 +8,7 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import{InformacionService} from './services/informacion.service';
+import{ProductosService} from './services/productos.service';
 
 import{HttpModule} from "@angular/http";
 
@@ -27,7 +28,7 @@ import{app_routing} from './app.routes';
     app_routing,
     HttpModule
   ],
-  providers: [InformacionService],
+  providers: [InformacionService,ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
