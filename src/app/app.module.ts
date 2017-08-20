@@ -7,6 +7,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductoComponent } from './components/producto/producto.component';
+import{InformacionService} from './services/informacion.service';
+
+import{HttpModule} from "@angular/http";
 
 import{app_routing} from './app.routes';
 
@@ -21,9 +24,10 @@ import{app_routing} from './app.routes';
   ],
   imports: [
     BrowserModule,
-    app_routing
+    app_routing,
+    HttpModule
   ],
-  providers: [],
+  providers: [InformacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
