@@ -12,7 +12,8 @@ export class ProductosService {
       this.cargando_productos=true;
       this.http.get("https://gag-86cba.firebaseio.com/productos_idx.json").subscribe(res=>{
         console.log(res.json());
-        this.cargando_productos=false
+        this.cargando_productos=false;
+        this.productos=res.json();
       });
 
 
