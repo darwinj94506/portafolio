@@ -9,7 +9,4 @@ export class PortafolioComponent  {
 
   constructor(public _ps:ProductosService) { }
 
-  ngOnInit() {
-  }
-
 }
