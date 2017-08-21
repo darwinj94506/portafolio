@@ -8,6 +8,12 @@ export class ProductosService {
   constructor(private http:Http) {
     this.cargar_productos();
   }
+
+public cargar_producto(codigo:string){
+  return this.http.get(`https://gag-86cba.firebaseio.com/productos/${codigo}.json`)
+}
+
+
   public cargar_productos(){
       this.cargando_productos=true;
       this.http.get("https://gag-86cba.firebaseio.com/productos_idx.json").subscribe(res=>{

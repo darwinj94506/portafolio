@@ -13,6 +13,7 @@ import{ProductosService} from './services/productos.service';
 import{HttpModule} from "@angular/http";
 
 import{app_routing} from './app.routes';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import{app_routing} from './app.routes';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ProductoComponent
+    ProductoComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
